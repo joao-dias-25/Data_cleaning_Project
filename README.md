@@ -8,64 +8,67 @@ The goal of this project is to combine everything you have learned about data wr
 
 **You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. Show us what you've got!
 
+## General aproach
 
 Is this project i receive a .csv file which i tryed to manipulate the data so i could clean it and hopefully obtain some insights.
 throw the next lines i wil try to make a line of thought on how to takle with data.
 
 first I analyse the shape of the raw data it had 5992 rows( of records on shark attacks) and 24 columns.
 On the columns a try to understand which kind of data was on each one.
+
 I will in the next step descrive the 24 four columns
+(i also quickly check for non values in each colums
 
 
-1- Case Number               object
-2- Date                      object
-3 -Year                       int64
-4 -Type                      object
-5 -Country                   object
-6 -Area                      object
-7 -Location                  object
-8 -Activity                  object
-9 -Name                      object
-10 -Sex                       object
-11 -Age                       object
-12 -Injury                    object
-13 -Fatal (Y/N)               object
-14 -Time                      object
-15 -Species                   object
-16 - Investigator or Source    object
-17 -pdf                       object
-18 -href formula              object
-19 -href                      object
-20 -Case Number.1             object
-21 -Case Number.2             object
-22 -original order             int64
-23 -Unnamed: 22               object
-24 -Unnamed: 23               object
-
-
-
-23 in this column i could see there was more than 99% non values
-
-24 in this column i could see there was more than 99% non values
+    - 1 Case Number           (it seems that the case number is order by date)
+    - 2 Date                  ( diferent kind of date type, some records show the the day, some show a year range )
+    - 3 Year                  ( seems similar two column date but with the year)
+    - 4 Type                  (type of attack provoked , unprovoked)
+    - 5 Country               ( it seems to be the country of the attack)
+    - 6 Area                  ( it seems to be the region of the attack)
+    - 7 Location              (it seems to be location of the attack)
+    - 8 Activity              (it seems to be the kind of activity the victim was doing)
+    - 9 Name                  (name of the victim)
+    - 10 Sex                  (sex gender)
+    - 11 Age                  (age) warning: 44,7% of non-values!!
+    - 12 Injury               (kind of injury, description?)
+    - 13 Fatal (Y/N)          (Fatality)
+    - 14 Time                 (time of the attack) warning: 53,6% of non-values!!
+    - 15 Species              (shark species) warning: 48,9% of non-values!!
+    - 16 Investigator or Source  (investigator name?)
+    - 17 pdf                   (a pdf file with the date and a name? )
+    - 18 href formula          (the link to a pdf)
+    - 19 href                  (another link to a pdf)
+    - 20 Case Number.1         (case number seems similar to column 1 "Case Number")
+    - 21 Case Number.2         (case number seems similar to column 1 "Case Number")
+    - 22 original order        (seems to be the order number of input of the records)
+    - 23 Unnamed: 22           (cant see any values) more than 99% non values
+    - 24 Unnamed: 23           (cant see any values) more than 99% non values
 
 
 
-after my first visualization of the raw data I started to question what can i do with this data, and what kind of cleaning and manipulation should I focus on this project.
+After my first visualization of the raw data I started to question what can i do with this data, and what kind of cleaning and manipulation should I focus on this project.
+
+checking the data for each colums with dtype to see how can i manipulate the data
+
 Seams meaningless start cleaning without a purpose.
 
 So I ask myself:
 
 - what kind of meaningfull "stories" could I obtain from the data?
 
-Seems to me that is important 
+What i would like to know since there wasnt any 
 
 "Is there a stereotype of victim?, Can I obtain a histogram of attacks related to Age?"
-"Which type of shark has the most attack?"
+"Which type of shark has the most attack and fatality?"
 "Does the season make a different on shark attacks? (through my first inspection i would need to disgard a lot od data that show me the season/month of attack)
 "is there a relation between provoked and the Activity? or is there a more "sensitive" shark who gets triggered more easily?"
 "can I see which areas have more shark-attacks?"
 
+and plot some results to see some outliers  
 
+
+cleaning steps
 
 
 
