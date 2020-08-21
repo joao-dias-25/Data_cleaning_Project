@@ -1,14 +1,29 @@
-![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
+<img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Project: Data Cleaning and Manipulation with Pandas
+# Project: Data Cleaning and Manipulation with Pandas  
 
-## Overview
+## Content
+- [Project Description](#project-description)
+- [Project Goals](#project-goals)
+- [Data Workflow](#data-workflow)
+- [Requirements & Deliverables](#requirements-&-deliverables)
+- [Mentoring](#mentoring)
+- [Presentation](#presentation)
+- [Tips & Tricks](#tips-&-tricks)
+- [Resources](#resources)
+
+## Project Description  
 
 The goal of this project is to combine everything you have learned about data wrangling, cleaning, and manipulation with Pandas so you can see how it all works together. For this project, you will start with this messy data set [Shark Attack](https://www.kaggle.com/teajay/global-shark-attacks/version/1). You will need to import it, use your data wrangling skills to clean it up, prepare it to be analyzed, and then export it as a clean CSV data file.
 
-**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. Show us what you've got!
 
-## General aproach
+## Project Goals
+During this project you will:
+* Learn how to "clean" the data for ploting
+* Practice how clean data using vectorized methods.
+* Begin to practice basic plotting.
+
+## Data Workflow
 
 Is this project i receive a .csv file which i tryed to manipulate the data so i could clean it and hopefully obtain some insights.
 throw the next lines i wil try to make a line of thought on how to takle with data.
@@ -63,55 +78,117 @@ What i would like to know since there wasnt any
 "Which type of shark has the most attack and fatality?"
 "Does the season make a different on shark attacks? (through my first inspection i would need to disgard a lot od data that show me the season/month of attack)
 "is there a relation between provoked and the Activity? or is there a more "sensitive" shark who gets triggered more easily?"
-"can I see which areas have more shark-attacks?"
+"Can I see which areas/countries have more shark-attacks?"
 
-and plot some results to see some outliers  
+and plot some results to see some outliers 
+
+
+![extreme cleaning]( http://www.uptourist.com/wp-content/uploads/2015/05/extreme-cleaner-5-shark-tank-cleaner.jpg)
+
 
 
 cleaning steps
 
+remove duplicated columns checking the boolean results when comparing
+remove columns with only a lot of unique values (like names or url links , leave one with the most unique values for index or pivot column
+strip strings from spaces and uppercases to make better counting types of values
+create a column for converting a storing datetime data
 
 
+## Requirements & Deliverables
+The **mandatory** requirements that this project needs to satisfy are:
+* The project must be planned. That is why creating a Kanban board and readme documentation is important. You can find a template for Trello [here](https://trello.com/b/kImhfE7w/data-projects).
+* Your repository must be clean and organized; this means that it must include a *.gitignore* file and a README file and also have a functional file structure.
+* Your project must include data from at least 2 different data sources (APIs & web, dataset & APIs, etc.).
+* The project needs to be presented within 5 minutes to your colleagues on the day of the presentation.
 
----
+The **deadline** to turn in the deliverables is Sunday at 23:59.
 
-## Technical Requirements
+## Mentoring
+The TAs will be your mentors!
 
-The technical requirements for this project are as follows:
+Your mentors will:
+* Keep track of your project in general terms. Your mentors will be the next people that know more about the project, after you.
+* Check if you are following your plan: are you keeping up with your tasks and deadlines? Do you have any obstacles blocking you?
+* Help/support you with specific questions.
 
-* The dataset that we provide you is a significantly messy data set. Apply the different cleaning and manipulation techniques you have learned.
-* Import the data using Pandas.
-* Examine the data for potential issues.
-* Use at least 8 of the cleaning and manipulation methods you have learned on the data.
-* Produce a Jupyter Notebook that shows the steps you took and the code you used to clean and transform your data set.
-* Export a clean CSV version of your data using Pandas.
+Your mentors are **not** meant to:
+* Know everything.
+* Be your managers. You have to be responsible of your own tasks!
+
+
 
 ## Necessary Deliverables
+The following deliverables should be pushed to your Github repo and the link should be submitted via the student portal.
 
-The following deliverables should be pushed to your Github repo for this chapter.
+* **A Jupyter Notebook (.ipynb) file**:
+The structure should be:
+1. Title of the project.
+2. Introduction to hypothoses.
+3. Data used (sources, limitations, cleaning, etc...)
+4. Any analysis and plots created.
+5. Any insights derived from your basic analysis.
+6. Possible further questions and improvements.
+* **A data folder**
+* **A ``README.md`` file**  
+Look [here](https://www.makeareadme.com/) for tips on how to structure a README.md file.
 
-* **A cleaned CSV data file** containing the results of your data wrangling work.
-* **A Jupyter Notebook (data-wrangling.ipynb)** containing all Python code and commands used in the importing, cleaning, manipulation, and exporting of your data set.
-* **A ``README.md`` file** containing a detailed explanation of the process followed in the importing, cleaning, manipulation, and exporting of your data as well as your results, obstacles encountered, and lessons learned.  Look [here](https://www.makeareadme.com/) for tips on how to structure a README.md file.
+
+## Presentation
+The presentation time limit is **5 minutes**! Our suggestion is to include at least the following slides in your presentation but feel free to add or remove slides:
+
+* Title of the project
+* Team presentation
+* Goals of the project
+* Data - sources, problems and limitations
+* Database - data wrangling/cleaning and database structure
+* Organization. Did you follow your workflow plan? Did you add something after starting the project? Did you follow your best practices agreements? Did you think about the risk management?
+* Any insights
+* Questions you were not able to answer and why
+* Learnings
+
+## Tips & Tricks  
+* Questions first. Data second.
+* Think about the workflow of your analysis BEFORE starting to code.
+* You will have more questions than answers. It's not a problem if you can't answer some or any of your questions. Just show us why you couldn't answer them, that itself will be interesting!
+
+## Resources  
+### Lists
+[AnyAPI](https://any-api.com/)  
+[Top 50 Most Popular APIs on RapidAPI](https://blog.rapidapi.com/most-popular-apis/)  
+[18 Fun APIs For Your Next Project](https://medium.com/@vicbergquist/18-fun-apis-for-your-next-project-8008841c7be9) 
+[reddit datasets](https://reddit.com/r/datasets)
+[FiveThirtyEight](https://data.fivethirtyeight.com/)
+[FiveThirtyEight on github](https://github.com/fivethirtyeight)
+[US Government open data](https://www.data.gov/)
+
+### Some Ideas
+[WeatherBit](https://www.weatherbit.io/api)  
+[Strava](https://developers.strava.com/docs/reference/)  
+[GitHub](https://developer.github.com/v3/)  
+[Twitter](https://developer.twitter.com/en/docs.html)  
+[LastFM](https://www.last.fm/api)  
+[Spotify](https://developer.spotify.com/documentation/web-api/reference/)  
+[NYTimes](https://web.archive.org/web/20150325135221/http://developer.nytimes.com/docs/times_newswire_api/)  
+[News](https://newsapi.org/docs)  
+[Reddit](https://github.com/reddit-archive/reddit/wiki/API)  
+[Medium](https://github.com/Medium/medium-api-docs)  
+[Twitch](https://dev.twitch.tv/docs/api/reference)  
+[IGDB](https://api-docs.igdb.com/)  
+[OMDB](http://www.omdbapi.com/)  
+[GIPHY](https://developers.giphy.com/docs/)  
+[StackExchange](https://api.stackexchange.com/docs)  
+[YouTube](https://developers.google.com/youtube/v3/docs/)  
+[TheSportsDB](https://github.com/enen92/script.module.thesportsdb)  
+[NBA API](https://pypi.org/project/nba-api/)  
+
+### Paper Examples
+[Data Analysis with Python](https://medium.com/@williamkoehrsen/data-analysis-with-python-19434f5d6324)  
+[The Best Mario Kart Character According To Data Science](https://medium.com/civis-analytics/the-best-mario-kart-character-according-to-data-science-7dfb65d4c18e)  
+
+## Overview
+
+The goal of this project is to combine everything you have learned about data wrangling, cleaning, and manipulation with Pandas so you can see how it all works together. For this project, you will start with this messy data set [Shark Attack](https://www.kaggle.com/teajay/global-shark-attacks/version/1). You will need to import it, use your data wrangling skills to clean it up, prepare it to be analyzed, and then export it as a clean CSV data file.
 
 
 
-
-
-
-## Suggested Ways to Get Started
-
-* **Examine the data and try to understand what the fields mean** before diving into data cleaning and manipulation methods.
-* **Break the project down into different steps** - use the topics covered in the lessons to form a check list, add anything else you can think of that may be wrong with your data set, and then work through the check list.
-* **Use the tools in your tool kit** - your knowledge of Python, data structures, Pandas, and data wrangling.
-* **Work through the lessons in class** & ask questions when you need to! Think about adding relevant code to your project each night, instead of, you know... _procrastinating_.
-* **Commit early, commit often**, don’t be afraid of doing something incorrectly because you can always roll back to a previous version.
-* **Consult documentation and resources provided** to better understand the tools you are using and how to accomplish what you want.
-
-## Useful Resources
-
-* [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
-* [Pandas Tutorials](https://pandas.pydata.org/pandas-docs/stable/tutorials.html)
-* [StackOverflow Pandas Questions](https://stackoverflow.com/questions/tagged/pandas)
-* [Awesome Public Data Sets](https://github.com/awesomedata/awesome-public-datasets)
-* [Kaggle Data Sets](https://www.kaggle.com/datasets)
