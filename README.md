@@ -8,6 +8,68 @@ The goal of this project is to combine everything you have learned about data wr
 
 **You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. Show us what you've got!
 
+
+Is this project i receive a .csv file which i tryed to manipulate the data so i could clean it and hopefully obtain some insights.
+throw the next lines i wil try to make a line of thought on how to takle with data.
+
+first I analyse the shape of the raw data it had 5992 rows( of records on shark attacks) and 24 columns.
+On the columns a try to understand which kind of data was on each one.
+I will in the next step descrive the 24 four columns
+
+
+1- Case Number               object
+2- Date                      object
+3 -Year                       int64
+4 -Type                      object
+5 -Country                   object
+6 -Area                      object
+7 -Location                  object
+8 -Activity                  object
+9 -Name                      object
+10 -Sex                       object
+11 -Age                       object
+12 -Injury                    object
+13 -Fatal (Y/N)               object
+14 -Time                      object
+15 -Species                   object
+16 - Investigator or Source    object
+17 -pdf                       object
+18 -href formula              object
+19 -href                      object
+20 -Case Number.1             object
+21 -Case Number.2             object
+22 -original order             int64
+23 -Unnamed: 22               object
+24 -Unnamed: 23               object
+
+
+
+23 in this column i could see there was more than 99% non values
+
+24 in this column i could see there was more than 99% non values
+
+
+
+after my first visualization of the raw data I started to question what can i do with this data, and what kind of cleaning and manipulation should I focus on this project.
+Seams meaningless start cleaning without a purpose.
+
+So I ask myself:
+
+- what kind of meaningfull "stories" could I obtain from the data?
+
+Seems to me that is important 
+
+"Is there a stereotype of victim?, Can I obtain a histogram of attacks related to Age?"
+"Which type of shark has the most attack?"
+"Does the season make a different on shark attacks? (through my first inspection i would need to disgard a lot od data that show me the season/month of attack)
+"is there a relation between provoked and the Activity? or is there a more "sensitive" shark who gets triggered more easily?"
+"can I see which areas have more shark-attacks?"
+
+
+
+
+
+
 ---
 
 ## Technical Requirements
@@ -28,6 +90,11 @@ The following deliverables should be pushed to your Github repo for this chapter
 * **A cleaned CSV data file** containing the results of your data wrangling work.
 * **A Jupyter Notebook (data-wrangling.ipynb)** containing all Python code and commands used in the importing, cleaning, manipulation, and exporting of your data set.
 * **A ``README.md`` file** containing a detailed explanation of the process followed in the importing, cleaning, manipulation, and exporting of your data as well as your results, obstacles encountered, and lessons learned.  Look [here](https://www.makeareadme.com/) for tips on how to structure a README.md file.
+
+
+
+
+
 
 ## Suggested Ways to Get Started
 
