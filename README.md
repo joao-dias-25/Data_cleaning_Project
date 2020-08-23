@@ -6,14 +6,14 @@
 - [Project Description](#project-description)
 - [Project Goals](#project-goals)
 - [Data Workflow](#data-workflow)
-- [Requirements & Deliverables](#requirements-&-deliverables)
-- [Mentoring](#mentoring)
+- [Deliverables](#deliverables)
+
 
 
 ## Project Description  
 
-Is this project i receive a .csv file which i tryed to manipulate the data so i could clean it and hopefully obtain some insights.
-throw the next lines i wil try to make a line of thought on how to takle with data.
+In this project I received a .csv file which i tryed to manipulate the data so I could clean it and hopefully obtain some insights.
+On the Data workflow I will try to describe how I takle the problem.
 
 
 
@@ -27,7 +27,7 @@ During this project i will:
 ## Data Workflow
 
 
-first I analyse the shape of the raw data it had 5992 rows( of records on shark attacks) and 24 columns.
+First I analyse the shape of the raw data. It had 5992 rows( of records on shark attacks) and 24 columns.
 On the columns a try to understand which kind of data was on each one.
 
 I will in the next step descrive the 24 four columns
@@ -63,7 +63,7 @@ I will in the next step descrive the 24 four columns
 
 After my first visualization of the raw data I started to question what can i do with this data, and what kind of cleaning and manipulation should I focus on this project.
 
-checking the data for each colums with dtype to see how can i manipulate the data
+checking the data for each colums with dtype fucntion to see how can I manipulate the data
 
 Seams meaningless start cleaning without a purpose.
 
@@ -71,15 +71,15 @@ So I ask myself:
 
 - what kind of meaningfull "stories" could I obtain from the data?
 
-What i would like to know since there wasnt any direction on what is the final porpuse of the cleaning.
+What i would like to know since there wasn't any direction on what is the final porpuse of the cleaning.
 
-I question myself:
+so I question myself:
 
-"Is there a stereotype of victim?, Can I obtain a histogram of attacks related to Age?"
-"Which type of shark has the most attack and fatality?"
-"Does the season make a different on shark attacks?
-"is there a relation between provoked and the Activity?
-"Can I see which areas/countries have more shark-attacks?"
+- "Is there a stereotype of victim?, Can I obtain a histogram of attacks related to Age?"
+- "Which type of shark has the most attack and fatality?"
+- "Does the season make a different on shark attacks?
+- "is there a relation between provoked and the Activity?
+- "Can I see which areas/countries have more shark-attacks?"
 
 Base on this questions i start the clean the data on the respective columns
 
@@ -88,48 +88,24 @@ Base on this questions i start the clean the data on the respective columns
 
 cleaning steps
 
-remove duplicated columns checking the boolean results when comparing
-remove columns with only a lot of unique values (like names or url links , leave one with the most unique values for index or pivot column
-strip strings from spaces and uppercases to make better counting types of values
-create a column for converting a storing datetime data for easy manipulating.
+- Remove duplicated columns, checking the boolean results when comparing the values.
+- Remove columns with a lot of unique values (like names or url links , leave one with the most unique values for index or pivot column
+- Strip strings from spaces and uppercases to make better counting types of values
+- Create a column for converting and storing  a datetime data for easy manipulating.
+- and plot some results to see some outliers 
 
-and plot some results to see some outliers 
+clearly and for obvious reasons there is more records on the last 100 years.
 
+make more sence to focus on cleaning the recent data for a better analysis.
 
+I decide not to remove any rows with NaN values, because i don´t know the purpose of the cleaning.
 
-## Requirements & Deliverables
-The **mandatory** requirements that this project needs to satisfy are:
-* The project must be planned. That is why creating a Kanban board and readme documentation is important. You can find a template for Trello [here](https://trello.com/b/kImhfE7w/data-projects).
-* Your repository must be clean and organized; this means that it must include a *.gitignore* file and a README file and also have a functional file structure.
-* Your project must include data from at least 2 different data sources (APIs & web, dataset & APIs, etc.).
-* The project needs to be presented within 5 minutes to your colleagues on the day of the presentation.
-
-The **deadline** to turn in the deliverables is Sunday at 23:59.
-
-## Mentoring
-The TAs will be your mentors!
-
-Your mentors will:
-* Keep track of your project in general terms. Your mentors will be the next people that know more about the project, after you.
-* Check if you are following your plan: are you keeping up with your tasks and deadlines? Do you have any obstacles blocking you?
-* Help/support you with specific questions.
+## Deliverables
 
 
-
-
-## Necessary Deliverables
-The following deliverables should be pushed to your Github repo and the link should be submitted via the student portal.
-
-* **A Jupyter Notebook (.ipynb) file**:
-The structure should be:
-1. Title of the project.
-2. Introduction to hypothoses.
-3. Data used (sources, limitations, cleaning, etc...)
-4. Any analysis and plots created.
-5. Any insights derived from your basic analysis.
-6. Possible further questions and improvements.
-* **A data folder**
-* **A ``README.md`` file**  
-Look [here](https://www.makeareadme.com/) for tips on how to structure a README.md file.
-
+* **A Jupyter Notebook (.ipynb) file: data-wrangling **
+* **The raw data in GSAF5.csv file**
+* **Mydatacleaning.csv file**
+* **A gitignore file**
+* **A README.md file**  
 
